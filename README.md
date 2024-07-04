@@ -1,4 +1,4 @@
-# LongSemAnnotator
+# LongSemAnnotator: A Longformer-based Framework Using Inter-Table Context for Column Type Annotation
 
 Column-Type Annotation (CTA) is a crucial task in Semantic Table Interpretation (STI), with applications in data integration, search, and Knowledge Graph (KG) con- struction. Existing methods often struggle to handle large tables or incorporate contextual information from multiple tables. This thesis introduces a novel framework for STI that addresses these limitations.
 
