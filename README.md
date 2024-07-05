@@ -22,10 +22,10 @@ Our findings reveal that the inclusion of inter-table context and the use of the
 
    ```bash
    git clone [invalid URL removed]
+   poetry shell
    cd longsemannotator
    poetry install
-   poetry shell
-
+   
 2. **Dependencies:**
 * Core Dependencies
   * python >= 3.11
