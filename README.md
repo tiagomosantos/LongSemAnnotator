@@ -22,8 +22,8 @@ Our findings reveal that the inclusion of inter-table context and the use of the
 
    ```bash
    git clone https://github.com/tiagomosantos/LongSemAnnotator.git
-   poetry shell
    cd longsemannotator
+   poetry shell
    poetry install
    
 2. **Dependencies:**
