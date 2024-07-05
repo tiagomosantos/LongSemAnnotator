@@ -22,41 +22,42 @@ Our findings reveal that the inclusion of inter-table context and the use of the
 
    ```bash
    git clone [invalid URL removed]
-   chmod u+x $download_sotab.sh
-   ./download_sotab.sh
    cd longsemannotator
+   poetry install
+   poetry shell
 
 2. **Dependencies:**
-  Core Dependencies
-    python >= 3.11
-    transformers == 4.39.0
-    evaluate == 0.4.1
-    faiss-cpu == 1.8.0
-    torch == 2.0.1
-    numpy == 1.25.0
-    scikit-learn == 1.3.0
-    accelerate == 0.32.1
-  
-  Experiment Tracking and Visualization
-    wandb == 0.17.4 
-  
-  Development Tools
-    jupyter == 1.0.0
+* Core Dependencies
+  * python >= 3.11
+  * transformers == 4.39.0
+  * evaluate == 0.4.1
+  * faiss-cpu == 1.8.0
+  * torch == 2.0.1
+  * numpy == 1.25.0
+  * scikit-learn == 1.3.0
+  * accelerate == 0.32.1
+* Experiment Tracking and Visualization
+  * wandb == 0.17.4 
 
-3. **Project Structure:**
+3. **Data Preparation:**
+   Run download_sotab.sh to download and process SOTAB CTA corpus.
+   ```bash
+   bash download_sotab.sh
 
-    auxiliar_functions/: Contains helper functions for various tasks (filtering, preprocessing, serialization, tokenization).
-    checkpoints/: Stores saved model checkpoints during training.
-    data/:
-        embeddings/: Contains precomputed word embeddings or other external resources.
-        raw_data/: The directory for raw tabular data.
-        ready_to_model_data/: Contains the preprocessed data ready to be used by the model.
-        structured_data/: Stores structured data (e.g., knowledge graphs) for semantic annotation.
-    base_model.py: Defines the base Longformer model architecture.
-    build_lb.py: Constructs the LongSemAnnotator model with custom layers.
-    classification_layers.py: Implements the classification layers for CTA.
-    create_embeddings.py: Handles the creation and loading of word embeddings.
-    dataset.py: Defines the dataset class for loading and processing tabular data.
-    tokenize_serialize.py: Script for tokenizing and serializing raw data.
-    trainer.py: Script for training the LongSemAnnotator model.
-    pyproject.toml: Configuration file for Poetry, a dependency manager.
+4. **Project Structure:**
+
+   auxiliary_functions/: Contains helper functions for various tasks (filtering, preprocessing, serialization, tokenization).
+checkpoints/: Stores saved model checkpoints during training.
+data/:
+    embeddings/: Contains precomputed word embeddings or other external resources.
+    raw_data/: Directory for raw tabular data.
+    ready_to_model_data/: Contains preprocessed data ready for model use.
+    structured_data/: Stores structured data (e.g., knowledge graphs) for semantic annotation.
+base_model.py: Defines the base Longformer model architecture.
+build_lb.py: Constructs the LongSemAnnotator model with custom layers.
+classification_layers.py: Implements the classification layers for CTA.
+create_embeddings.py: Handles the creation and loading of word embeddings.
+dataset.py: Defines the dataset class for loading and processing tabular data.
+tokenize_serialize.py: Script for tokenizing and serializing raw data.
+trainer.py: Script for training the LongSemAnnotator model.
+pyproject.toml: Configuration file for Poetry, a dependency manager.
