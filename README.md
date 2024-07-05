@@ -8,6 +8,8 @@ We evaluate our framework on the SOTAB benchmark, a dataset designed for CTA. Th
 
 Our findings reveal that the inclusion of inter-table context and the use of the Long- former model significantly improve CTA accuracy. We also identify challenges in anno- tating certain column types with high semantic overlap, highlighting potential areas for future research. Overall, this work contributes to the advancement of STI by providing a more accurate, robust, and scalable framework for column type annotation.
 
+![My Image](images/overview.png)
+
 ## Key Features
 
 * **Longformer-based:** Utilizes the Longformer model to capture long-range dependencies and contextual information within tables.
