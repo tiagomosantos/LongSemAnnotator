@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "longsemannotator"
+version = "0.1.0"
+description = ""
+authors = ["Tiago Santos"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+transformers = "4.39.0"
+evaluate = "0.4.1"
+faiss-cpu = "1.8.0"
+torch = "2.0.1"
+numpy = "1.25.0"
+scikit-learn = "1.3.0"
+wandb = "^0.17.4"
+jupyter = "^1.0.0"
+accelerate = "^0.32.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
