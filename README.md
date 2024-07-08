@@ -15,8 +15,6 @@ Our findings reveal that the inclusion of inter-table context and the use of the
 * **Longformer-based:** Utilizes the Longformer model to capture long-range dependencies and contextual information within tables.
 * **Semantic Similarity:** Incorporates semantic similarity measures to identify related columns and enhance annotation accuracy.
 * **Inter-table Context:** Considers relationships between tables to improve disambiguation and annotation quality.
-* **Modular Design:** Designed with modularity in mind for easy experimentation and adaptation to different tasks.
-* **Open Source:** Released under the MIT License for transparency and collaboration.
 
 ## Installation
 
