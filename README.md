@@ -66,6 +66,6 @@ pyproject.toml: Configuration file for Poetry, a dependency manager.
 
 5. **Benchmark Models:**
    * Using full SOAB training dataset:
-    ** https://huggingface.co/tiagomosantos/longsemannotator_sotab_full_cta
+   https://huggingface.co/tiagomosantos/longsemannotator_sotab_full_cta
    * Using small SOTAB training dataset:
-    ** https://huggingface.co/tiagomosantos/longsemannotator_sotab_small_cta
+     https://huggingface.co/tiagomosantos/longsemannotator_sotab_small_cta
