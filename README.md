@@ -22,11 +22,13 @@ Our findings reveal that the inclusion of inter-table context and the use of the
 
    ```bash
    git clone https://github.com/tiagomosantos/LongSemAnnotator.git
-   cd longsemannotator
-   poetry shell
-   poetry install
    
-2. **Dependencies:**
+2. **Data Preparation:**
+   Run download_sotab.sh to download and process SOTAB CTA corpus.
+   ```bash
+   bash download_sotab.sh
+
+3. **Dependencies:**
 * Core Dependencies
   * python >= 3.11
   * transformers == 4.39.0
@@ -39,10 +41,10 @@ Our findings reveal that the inclusion of inter-table context and the use of the
 * Experiment Tracking and Visualization
   * wandb == 0.17.4 
 
-3. **Data Preparation:**
-   Run download_sotab.sh to download and process SOTAB CTA corpus.
    ```bash
-   bash download_sotab.sh
+   cd longsemannotator
+   poetry shell
+   poetry install
 
 4. **Project Structure:**
 
