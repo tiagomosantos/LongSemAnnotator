@@ -8,13 +8,13 @@ We evaluate our framework on the SOTAB benchmark, a dataset designed for CTA. Th
 
 Our findings reveal that the inclusion of inter-table context and the use of the Long- former model significantly improve CTA accuracy. We also identify challenges in anno- tating certain column types with high semantic overlap, highlighting potential areas for future research. Overall, this work contributes to the advancement of STI by providing a more accurate, robust, and scalable framework for column type annotation.
 
+![My Image](images/overview.png)
+
 ## Key Features
 
 * **Longformer-based:** Utilizes the Longformer model to capture long-range dependencies and contextual information within tables.
 * **Semantic Similarity:** Incorporates semantic similarity measures to identify related columns and enhance annotation accuracy.
 * **Inter-table Context:** Considers relationships between tables to improve disambiguation and annotation quality.
-* **Modular Design:** Designed with modularity in mind for easy experimentation and adaptation to different tasks.
-* **Open Source:** Released under the MIT License for transparency and collaboration.
 
 ## Installation
 
@@ -22,11 +22,13 @@ Our findings reveal that the inclusion of inter-table context and the use of the
 
    ```bash
    git clone https://github.com/tiagomosantos/LongSemAnnotator.git
-   cd longsemannotator
-   poetry shell
-   poetry install
    
-2. **Dependencies:**
+2. **Data Preparation:**
+   Run download_sotab.sh to download and process SOTAB CTA corpus.
+   ```bash
+   bash download_sotab.sh
+
+3. **Dependencies:**
 * Core Dependencies
   * python >= 3.11
   * transformers == 4.39.0
@@ -39,10 +41,10 @@ Our findings reveal that the inclusion of inter-table context and the use of the
 * Experiment Tracking and Visualization
   * wandb == 0.17.4 
 
-3. **Data Preparation:**
-   Run download_sotab.sh to download and process SOTAB CTA corpus.
    ```bash
-   bash download_sotab.sh
+   cd longsemannotator
+   poetry shell
+   poetry install
 
 4. **Project Structure:**
 
@@ -61,3 +63,9 @@ dataset.py: Defines the dataset class for loading and processing tabular data.
 tokenize_serialize.py: Script for tokenizing and serializing raw data.
 trainer.py: Script for training the LongSemAnnotator model.
 pyproject.toml: Configuration file for Poetry, a dependency manager.
+
+5. **Benchmark Models:**
+   * Using full SOTAB training dataset:
+   https://huggingface.co/tiagomosantos/longsemannotator_sotab_full_cta
+   * Using small SOTAB training dataset:
+     https://huggingface.co/tiagomosantos/longsemannotator_sotab_small_cta
