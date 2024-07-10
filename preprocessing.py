@@ -1,9 +1,9 @@
 import pandas as pd
-from longsemannotator.auxiliar_functions.preprocessing_functions import preprocess_sotab_split
+from auxiliar_functions.preprocessing_functions import preprocess_sotab_split
 
 def main():
-    source_folder = 'longsemannotator/data/raw_data'
-    save_path = 'longsemannotator/data/structured_data/'
+    source_folder = 'data/raw_data'
+    save_path = 'data/structured_data/'
 
     # Preprocess the Train directory
     print('Preprocessing the Train directory')

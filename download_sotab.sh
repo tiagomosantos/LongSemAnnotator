@@ -42,5 +42,8 @@ for url in "${urls[@]}"; do
     process_url "$url" "$dest_folder" "$extract_folder"
 done
 
+# Navigate into to the project directory
+cd longsemannotator
+
 # Call the Python script
 python3 preprocessing.py
