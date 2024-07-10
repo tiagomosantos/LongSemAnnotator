@@ -64,8 +64,5 @@ tokenize_serialize.py: Script for tokenizing and serializing raw data.
 trainer.py: Script for training the LongSemAnnotator model.
 pyproject.toml: Configuration file for Poetry, a dependency manager.
 
-5. **Benchmark Models:**
-   * Using full SOTAB training dataset:
-   https://huggingface.co/tiagomosantos/longsemannotator_sotab_full_cta
-   * Using small SOTAB training dataset:
-     https://huggingface.co/tiagomosantos/longsemannotator_sotab_small_cta
+5. **Embeddings and Checkpoints:**
+   https://liveeduisegiunl-my.sharepoint.com/:f:/g/personal/20220629_novaims_unl_pt/EjkBpvwhFx1Ci3iXRZnk-wcBapCIyiEuMw8WH7E1GCKAyw?e=ObYbXv
