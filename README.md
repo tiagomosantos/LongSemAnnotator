@@ -48,7 +48,7 @@ Our findings reveal that the inclusion of inter-table context and the use of the
 
 4. **Project Structure:**
 
-./
+```bash
 ├── longsemannotator
 │   ├── auxiliar_functions 
 │   │   ├── filtering_functions.py
@@ -69,6 +69,7 @@ Our findings reveal that the inclusion of inter-table context and the use of the
 ├── preprocessing.py
 ├── pyproject.toml
 └── setup_folder.sh
+```
 
 5. **Embeddings and Checkpoints:**
 
