@@ -48,43 +48,27 @@ Our findings reveal that the inclusion of inter-table context and the use of the
 
 4. **Project Structure:**
 
-└── ./
-    ├── longsemannotator
-    │   ├── auxiliar_functions 
-    │   │   ├── filtering_functions.py
-    │   │   ├── general_purpose_functions.py
-    │   │   ├── preprocessing_functions.py
-    │   │   ├── serialization_functions.py
-    │   │   └── tokenization_functions.py
-    │   ├── base_model.py
-    │   ├── build_lb.py
-    │   ├── classification_layers.py
-    │   ├── create_embeddings.py
-    │   ├── dataset.py
-    │   ├── evaluate.py
-    │   ├── sotab_specifics.py
-    │   ├── tokenize_serialize.py
-    │   └── trainer.py
-    ├── download_sotab.sh
-    ├── preprocessing.py
-    ├── pyproject.toml
-    └── setup_folder.sh
-
-   - auxiliary_functions/: 
-   - checkpoints/: Stores saved model checkpoints during training.
-data/:
-    embeddings/: Contains precomputed word embeddings or other external resources.
-    raw_data/: Directory for raw tabular data.
-    ready_to_model_data/: Contains preprocessed data ready for model use.
-    structured_data/: Stores structured data (e.g., knowledge graphs) for semantic annotation.
-base_model.py: Defines the base Longformer model architecture.
-build_lb.py: Constructs the LongSemAnnotator model with custom layers.
-classification_layers.py: Implements the classification layers for CTA.
-create_embeddings.py: Handles the creation and loading of word embeddings.
-dataset.py: Defines the dataset class for loading and processing tabular data.
-tokenize_serialize.py: Script for tokenizing and serializing raw data.
-trainer.py: Script for training the LongSemAnnotator model.
-pyproject.toml: Configuration file for Poetry, a dependency manager.
+./
+├── longsemannotator
+│   ├── auxiliar_functions 
+│   │   ├── filtering_functions.py
+│   │   ├── general_purpose_functions.py
+│   │   ├── preprocessing_functions.py
+│   │   ├── serialization_functions.py
+│   │   └── tokenization_functions.py
+│   ├── base_model.py
+│   ├── build_lb.py
+│   ├── classification_layers.py
+│   ├── create_embeddings.py
+│   ├── dataset.py
+│   ├── evaluate.py
+│   ├── sotab_specifics.py
+│   ├── tokenize_serialize.py
+│   └── trainer.py
+├── download_sotab.sh
+├── preprocessing.py
+├── pyproject.toml
+└── setup_folder.sh
 
 5. **Embeddings and Checkpoints:**
 
